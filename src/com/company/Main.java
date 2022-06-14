@@ -4,6 +4,7 @@ import com.company.L001.HelloWorld;
 import com.company.L002.POJO;
 import com.company.L003.Cat;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,5 +12,8 @@ public class Main {
 
         Cat cat = new Cat();
         cat.voice();
+
+        com.company.L004.Cat catL004 = new com.company.L004.Cat();
+        catL004.voice();
     }
 }
