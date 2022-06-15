@@ -21,4 +21,12 @@ public class Bird extends Animal{
         super();
         this.canFly = true;
     }
+
+    public Boolean getFlyModeActive() {
+        return flyModeActive;
+    }
+
+    public void setFlyModeActive(Boolean flyModeActive) {
+        this.flyModeActive = flyModeActive;
+    }
 }
