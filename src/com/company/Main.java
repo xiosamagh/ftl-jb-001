@@ -9,6 +9,8 @@ import com.company.animals.Cat;
 import com.company.animals.Dog;
 import com.company.animals.Duck;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -43,6 +45,17 @@ public class Main {
         duck.landing();
         duck.isTheBirdFlying();
         duck.showSpeed();
+
+        Dog[] dogHomeless = new Dog[] {
+                Dog.ofHomeLess(2),
+                Dog.ofHomeLess(4),
+                Dog.ofHomeLess(5)
+        };
+
+        Dog[] dogs = Dog.randomArray();
+        System.out.println(Arrays.toString(dogs));
+
+
 
     }
 }
