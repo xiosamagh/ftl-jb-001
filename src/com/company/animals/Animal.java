@@ -12,6 +12,7 @@ package com.company.animals;
     }
 
     public Animal() {
+        this.canFly = false;
     }
 
     public void voice() {
