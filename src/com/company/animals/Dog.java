@@ -7,6 +7,16 @@ public class Dog extends Animal{
 
     public Dog() {}
 
+    public static Dog[] randomArray() {
+
+        Dog[] dogs = new Dog[3];
+        dogs[0] = Dog.of("sharik", 4);
+        dogs[1] = Dog.of("buble", 1);
+        dogs[2] = Dog.of("tyzik", 6);
+
+        return dogs;
+    }
+
     public void goToStick(Integer stickPosition) {
         Integer delta = stickPosition - this.currentPosition;
         this.runForward(delta);
@@ -29,5 +39,14 @@ public class Dog extends Animal{
     @Override
     public void voice() {
         System.out.println("гав гав!!");
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", currentPosition=" + currentPosition +
+                '}';
     }
 }
