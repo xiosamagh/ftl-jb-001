@@ -1,5 +1,8 @@
 package com.company.animals;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Dog extends Animal{
     public Dog(String name, Integer weight) {
         super(name, weight);
@@ -7,12 +10,14 @@ public class Dog extends Animal{
 
     public Dog() {}
 
-    public static Dog[] randomArray() {
+    public static List<Dog> randomArray() {
+        List<Dog> dogs = new ArrayList<>();
 
-        Dog[] dogs = new Dog[3];
-        dogs[0] = Dog.of("sharik", 4);
-        dogs[1] = Dog.of("buble", 1);
-        dogs[2] = Dog.of("tyzik", 6);
+        dogs.add(Dog.of("sharik", 4));
+        dogs.add(Dog.of("buble", 1));
+        dogs.add(Dog.of("tyzik", 6));
+
+
 
         return dogs;
     }

@@ -10,6 +10,7 @@ import com.company.animals.Dog;
 import com.company.animals.Duck;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -46,14 +47,22 @@ public class Main {
         duck.isTheBirdFlying();
         duck.showSpeed();
 
-        Dog[] dogHomeless = new Dog[] {
+        List<Dog> dogHomeless = Arrays.asList( new Dog[] {
                 Dog.ofHomeLess(2),
                 Dog.ofHomeLess(4),
                 Dog.ofHomeLess(5)
-        };
+        });
 
-        Dog[] dogs = Dog.randomArray();
-        System.out.println(Arrays.toString(dogs));
+        System.out.println(dogHomeless.get(0));
+        System.out.println(dogHomeless.get(1));
+        System.out.println(dogHomeless.get(2));
+        System.out.println(dogHomeless.size());
+
+
+        List<Dog> dogs = Dog.randomArray();
+        System.out.println(dogs.get(0));
+        System.out.println(dogs.get(1));
+        System.out.println(dogs.get(2));
 
 
 
