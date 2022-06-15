@@ -20,9 +20,10 @@ public class Main {
 //        com.company.L004.Cat catL004 = new com.company.L004.Cat();
 //        catL004.voice();
 
-//        Cat cat = new Cat("Barsi", 20);
-//
-//        System.out.println(cat.jumpHeight());
+        Cat cat = new Cat("Barsi", 20);
+
+        System.out.println(cat.jumpHeight());
+        cat.voice();
 
         Dog dog = new Dog();
         dog.goToStick(14);
