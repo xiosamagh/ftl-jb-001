@@ -8,7 +8,9 @@ public class Dog extends Animal{
         super(name, weight);
     }
 
-    public Dog() {}
+    public Dog() {
+        this.canFly = false;
+    }
 
     public static List<Dog> randomArray() {
         List<Dog> dogs = new ArrayList<>();
