@@ -3,17 +3,17 @@ package com.company.animals;
 public class Bird extends Animal{
     protected Boolean flyModeActive = false;
 
-    public void takeOff() {
+    public final void takeOff() {
         flyModeActive = true;
     }
 
-    public void landing() {
+    public final void landing() {
         flyModeActive = false;
     }
 
     public void isTheBirdFlying() {
         System.out.println(
-                this.flyModeActive == true ? "Duck flying mode - yes" : "Duck flying mode - no"
+                this.flyModeActive == true ? "Bird flying mode - yes" : "Bird flying mode - no"
         );
     }
 
