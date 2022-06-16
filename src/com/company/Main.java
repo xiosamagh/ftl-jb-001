@@ -17,7 +17,7 @@ import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Animal.WeightException {
 //        POJO.run();
 //
 //        Cat cat = new Cat();
@@ -96,6 +96,16 @@ public class Main {
         StringExample.run();
 
         TypeConversion.run();
+
+        dog.setWeight(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.KG));
+        try {
+            dog.getWeight().setValue(-10);
+        }
+        catch (Animal.WeightException ignore) {
+            
+        }
+
+
 
 
     }
