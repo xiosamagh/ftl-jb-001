@@ -18,8 +18,8 @@ public class Bird extends Animal{
     }
 
     public Bird() {
-        super();
-        this.canFly = true;
+        super(MoveType.FLY);
+
     }
 
     public Boolean getFlyModeActive() {
