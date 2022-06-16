@@ -15,10 +15,15 @@ public class Dog extends Animal{
 
     public static List<Dog> randomArray() {
         List<Dog> dogs = new ArrayList<>();
+        try {
+            dogs.add(Dog.of("sharik", new AnimalWeight(-1, AnimalWeight.WeightType.KG)));
+            dogs.add(Dog.of("buble", new AnimalWeight(1, AnimalWeight.WeightType.KG)));
+            dogs.add(Dog.of("tyzik", new AnimalWeight(5, AnimalWeight.WeightType.KG)));
+        }
+        catch (WeightException w) {
+            w.printStackTrace();
+        }
 
-        dogs.add(Dog.of("sharik", new AnimalWeight(3, AnimalWeight.WeightType.KG)));
-        dogs.add(Dog.of("buble", new AnimalWeight(1, AnimalWeight.WeightType.KG)));
-        dogs.add(Dog.of("tyzik", new AnimalWeight(5, AnimalWeight.WeightType.KG)));
 
 
 
