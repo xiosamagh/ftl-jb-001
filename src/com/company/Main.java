@@ -9,6 +9,7 @@ import com.company.L013.SwitchExample;
 import com.company.animals.Cat;
 import com.company.animals.Dog;
 import com.company.animals.Duck;
+import com.company.animals.MoveType;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -84,6 +85,13 @@ public class Main {
         }
         for (int i =0; i < 100; i++) {
 //            SwitchExample.run();
+        }
+
+        System.out.println(duck.getMoveType());
+        System.out.println(dog.getMoveType().getValue());
+
+        if (dog.getMoveType() == MoveType.WALK) {
+            System.out.println("МОжет ходить");
         }
 
 
