@@ -1,6 +1,6 @@
 package com.tasks.T018;
 
-public class Shape {
+public abstract class Shape {
     private double volume;
 
     public double getVolume() {
